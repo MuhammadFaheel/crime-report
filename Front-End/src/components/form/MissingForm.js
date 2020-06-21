@@ -23,8 +23,8 @@ function MissingForm() {
     return (
         <div>
             <Link to= '/'><Button color= 'warning'>Back</Button></Link>
-            <Form style={{marginLeft: '30%', width: '40%', marginBottom: '5%'}} onSubmit={handlerSubmit}>
-                <h1 style={{textAlign: 'center', fontWeight: 'bold'}}>Missing Person Form:</h1>>
+            <Form onSubmit={handlerSubmit}>
+                <h1>Missing Person Form:</h1>
                 <FormGroup>
                     <Label>Name:</Label>
                     <Input type='text' value={mname} onChange={e => {setMname(e.target.value)}} />

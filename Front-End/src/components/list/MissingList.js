@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../App.css'
 
 function MissingList() {
 
@@ -38,37 +39,12 @@ function MissingList() {
         }
     ]
 
-    const tagFrom = {
-        color: 'red',
-        margin: '0%',
-        padding: '0%',
-        marginLeft: '7%',
-        marginRight: '5%',
-        textDecoration: 'underline'
-    }
-
-    const fromList = {
-        backgroundColor: 'gray',
-        color: 'white',
-        margin: '5px',
-        border: 'solid',
-        borderColor: 'black',
-        borderRadius: '15px',
-        padding: '10px'
-    }
-
-    const fromBottom = {
-        marginBottom: '5%',
-        marginLeft: '5%',
-        marginRight: '5%'
-    }
-
     return (
         <div>
-            <h2 style={tagFrom}>Missing Person List:</h2>
-            <div style={fromBottom}>
+            <h2 className='details'>Missing Person List:</h2>
+            <div className='bottoms'>
                 {users.map(user => (
-                    <div style={fromList} key={user.id}>
+                    <div className='lists' key={user.id}>
                         Name: {user.name}<br/>
                         Age: {user.age}<br/>
                         City: {user.city}<br/>

@@ -15,15 +15,15 @@ function ComplaintForm() {
     const form = { name, address, complaint, city, code, subject }
 
     const handlerSubmit = (e) => {
-        e.preventDefault,
+        e.preventDefault();
         console.log(form)
     }
 
     return (
         <div>
             <Link to='/'><Button color='warning'>Back</Button></Link>
-            <Form style={{marginLeft: '30%', width: '40%', marginBottom: '5%'}} onSubmit={handlerSubmit}>
-                <h1 style={{textAlign: 'center', fontWeight: 'bold'}}>Complaint Form:</h1>
+            <Form onSubmit={handlerSubmit}>
+                <h1>Complaint Form:</h1>
                 <FormGroup>
                     <Label>Name:</Label><br/>
                     <Input type='text' value={name} onChange={e => {setName(e.target.value)}} />

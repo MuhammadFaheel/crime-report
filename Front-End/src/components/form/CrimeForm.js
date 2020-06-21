@@ -22,8 +22,8 @@ function CrimeForm() {
     return (
         <div>
             <Link to= '/'><Button color= 'warning'>Back</Button></Link>
-            <Form style={{marginLeft: '30%', width: '40%', marginBottom: '5%'}} onSubmit={handlerSubmit}>
-                <h1 style={{textAlign: 'center', fontWeight: 'bold'}}>Crime Form:</h1>>
+            <Form onSubmit={handlerSubmit}>
+                <h1>Crime Form:</h1>
                 <FormGroup>
                     <Label>Area:</Label><br/>
                     <Input type='text' value={area} onChange={e => {setArea(e.target.value)}} />

@@ -1,8 +1,3 @@
-.App {
-  text-align: center;
-  background-color: greenyellow;
-}
-
 .nav{
   display: flex;
   justify-content: space-around;
@@ -18,4 +13,71 @@
   align-items: center;
   list-style: none;
   color: white;
+}
+
+Form {
+  margin-left: 30%; 
+  width: 40%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.details {
+  color: red;
+  margin: 0%;
+  padding: 0%;
+  margin-left: 7%;
+  margin-right: 5%;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.lists {
+  background-color: gray;
+  color: white;
+  margin: 5px;
+  border: solid;
+  border-color: black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.bottoms {
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footb {
+  color: white;
+  background-color: #212529;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.foota {
+  color: white;
+  background-color: #212529;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
 }
