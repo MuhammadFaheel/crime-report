@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
-import ComplaintList from './list/ComplaintList';
-import MissingList from './list/MissingList';
-import CrimeList from './list/CrimeList';
+import ComplaintList from './content/list/ComplaintList';
+import MissingList from './content/list/MissingList';
+import CrimeList from './content/list/CrimeList';
 import { Nav, NavItem, Button, NavLink } from 'reactstrap';
 
 function Home() {
