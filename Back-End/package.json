@@ -4,8 +4,10 @@
   "description": "Submitting Crime Report, Missing Person and Complaint",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "front-end-install": "npm install --prefix front-end",
+    "start": "nodemon server.js",
+    "front-end": "cd ../front-end && npm start",
+    "dev": "concurrently \"npm start\" \"npm run front-end\""
   },
   "author": "Muhammad Faheel",
   "license": "ISC",
